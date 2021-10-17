@@ -26,7 +26,7 @@ description: >-                        # used by seo meta and the atom feed
   I am an Assistant Professor of Finance at Villanova University. My research interests lie in the areas of empirical asset pricing, institutional investors, and alternative investments. Check out my website to access my papers, syllabi, code, or other resources.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''https://velthuis.github.io/website'
+url: 'https://velthuis.github.io/website'
 
 github:
   username: velthuis            # change to your github username
@@ -47,7 +47,7 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+#google_site_verification: google_meta_tag_verification # change to your verification string
 
 # ↑ --------------------------
 

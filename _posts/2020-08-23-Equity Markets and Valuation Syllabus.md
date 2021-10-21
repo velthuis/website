@@ -4,7 +4,7 @@ date: 2020-08-23 00:00:00 -0500
 categories: [Teaching]
 tags: [equity markets]     # TAG names should always be lowercase
 image:
-  src: /assets/img/Blackboard cover 80.png
+  src: /website/assets/img/Blackboard cover 80.png
   width: 1080   # in pixels
   height: 269   # in pixels
   alt: Course Banner

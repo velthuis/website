@@ -4,7 +4,7 @@ date: 2021-01-15 00:00:00 -0500
 categories: [Teaching]
 tags: [derivatives]     # TAG names should always be lowercase
 image:
-  src: /assets/img/banner-fin2325-wide-80.png
+  src: /assets/img/banner-vsb-wide-80.png
   width: 1080   # in pixels
   height: 264   # in pixels
   alt: Course Banner

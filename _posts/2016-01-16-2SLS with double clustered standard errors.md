@@ -5,6 +5,8 @@ categories: [Code, SAS]
 tags: [sas, clustered s.e.]     # TAG names should always be lowercase
 ---
 
+This program was written for my research on hedge fund capacity constraints, where we use recursive demeaning to estimate the returns to scale effect, following Pastor, Stambaugh, and Taylor (2015).
+
 ```SAS
 ********** SAS code for 2SLS with double-clustered standard errors **********;
 /* Author:  Raisa Velthuis */

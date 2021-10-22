@@ -1,7 +1,7 @@
 ---
 title: 2SLS with double clustered standard errors
 date: 2016-01-16 00:00:00 -0500
-categories: [Coding, SAS]
+categories: [Code, SAS]
 tags: [sas, clustered s.e.]     # TAG names should always be lowercase
 ---
 

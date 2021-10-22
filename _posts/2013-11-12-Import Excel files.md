@@ -5,6 +5,8 @@ categories: [Code, SAS]
 tags: [sas, import, excel]  # TAG names should always be lowercase
 ---
 
+This program is helpful to import a large set of similarly structured Excel files, for example to read a set of files containing Russell Index constituent data.
+
 ```SAS
 /* Program to import set of Excel files obtained from Russell */
 /* Each Excel file has the same format, but covers different years */

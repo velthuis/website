@@ -18,9 +18,9 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Raisa Velthuis' Personal Website  # the main title
+title: Raisa Velthuis  # the main title
 
-tagline: Information about my research, courses, and other resources.   # it will display as the sub-title
+tagline: Assistant Professor of Finance at Villanova University.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   I am an Assistant Professor of Finance at Villanova University. My research interests lie in the areas of empirical asset pricing, institutional investors, and alternative investments. Check out my website to access my papers, syllabi, code, or other resources.

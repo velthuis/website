@@ -13,12 +13,10 @@ image:
 # FIN2325–001
 ```
 Prerequisites: FIN 2227 + FIN 2323 + FIN 2114
-```
-```
+
 Class: MW 3–4:15pm, Bartley 2045
 Office Hours: Wednesday 1:30-2:30pm, and by appointment
-```
-```
+
 Dr. Raisa Velthuis
 raisa.velthuis@villanova.edu
 Office: Bartley 2085, (610) 519–4319

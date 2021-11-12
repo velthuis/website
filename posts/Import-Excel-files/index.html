@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="day-prompt" content="days ago"><meta name="hour-prompt" content="hours ago"><meta name="minute-prompt" content="minutes ago"><meta name="justnow-prompt" content="just now"><meta name="generator" content="Jekyll v4.2.1" /><meta property="og:title" content="Import Excel files" /><meta property="og:locale" content="en" /><meta name="description" content="This program is helpful to import a large set of similarly structured Excel files, for example to read a set of files containing Russell Index constituent data." /><meta property="og:description" content="This program is helpful to import a large set of similarly structured Excel files, for example to read a set of files containing Russell Index constituent data." /><link rel="canonical" href="https://velthuis.github.io/website/posts/Import-Excel-files/" /><meta property="og:url" content="https://velthuis.github.io/website/posts/Import-Excel-files/" /><meta property="og:site_name" content="Raisa Velthuis" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2013-11-12T00:00:00-05:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Import Excel files" /><meta name="twitter:site" content="@raisaing" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"description":"This program is helpful to import a large set of similarly structured Excel files, for example to read a set of files containing Russell Index constituent data.","url":"https://velthuis.github.io/website/posts/Import-Excel-files/","@type":"BlogPosting","headline":"Import Excel files","dateModified":"2021-10-21T20:34:25-04:00","datePublished":"2013-11-12T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://velthuis.github.io/website/posts/Import-Excel-files/"},"@context":"https://schema.org"}</script><title>Import Excel files | Raisa Velthuis</title><link rel="apple-touch-icon" sizes="180x180" href="/website/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/website/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/website/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/website/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/website/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Raisa Velthuis"><meta name="application-name" content="Raisa Velthuis"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/website/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/website/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column align-items-end" lang="en"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/website/" alt="avatar" class="mx-auto"> <img src="/website/assets/img/avatar.png" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/website/">Raisa Velthuis</a></div><div class="site-subtitle font-italic">Assistant Professor of Finance at Villanova University.</div></div><ul class="w-100"><li class="nav-item"> <a href="/website/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/website/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/website/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/website/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/website/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/velthuis" aria-label="github" class="order-3" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://www.linkedin.com/in/raisav" aria-label="linkedin" class="order-4" target="_blank" rel="noopener"> <i class="fab fa-linkedin"></i> </a> <a href="https://twitter.com/raisaing" aria-label="twitter" class="order-5" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['raisa.velthuis','villanova.edu'].join('@')" aria-label="email" class="order-6" > <i class="fas fa-envelope"></i> </a> <span class="icon-border order-2"></span> <span id="mode-toggle-wrapper" class="order-1"> <i class="mode-toggle fas fa-adjust"></i> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } var self = this; /* always follow the system prefers */ this.sysDarkPrefers.addListener(function() { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.updateMermaid(); }); } /* constructor() */ setDark() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_KEY); sessionStorage.removeItem(ModeToggle.MODE_KEY); } get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; } get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer) ) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } updateMermaid() { if (typeof mermaid !== "undefined") { let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default"); let config = { theme: expectedTheme }; /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function() { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.updateMermaid(); } /* flipMode() */ } /* ModeToggle */ let toggle = new ModeToggle(); $(".mode-toggle").click(function() { toggle.flipMode(); }); </script> </span></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/website/"> Home </a> </span> <span>Import Excel files</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>Import Excel files</h1><div class="post-meta text-muted d-flex flex-column"><div> <span class="semi-bold"> Raisa Velthuis </span> on <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Tue, Nov 12, 2013, 12:00 AM -0500" >Nov 12, 2013<i class="unloaded">2013-11-12T00:00:00-05:00</i> </span></div><div> <span> Updated <span class="timeago lastmod" data-toggle="tooltip" data-placement="bottom" title="Thu, Oct 21, 2021, 8:34 PM -0400" >Oct 21<i class="unloaded">2021-10-21T20:34:25-04:00</i> </span> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="869 words">4 min read</span></div></div><div class="post-content"><p>This program is helpful to import a large set of similarly structured Excel files, for example to read a set of files containing Russell Index constituent data.</p><pre><code class="language-SAS">/* Program to import set of Excel files obtained from Russell */
+/* Each Excel file has the same format, but covers different years */
+/* The file names indicate whether the data concerns the Russell 1000, 2000, or Micro index */
+/* Variable names (column headers) are repeated throughout the file, and eliminated after importing *
+/* Finally, CRSP permnos are matched to the index constituent data by ticker-date pairs */
+
+/* Author:  Raisa Velthuis */
+/* Created: November 22, 2013 */
+
+* initialize;
+%let path = C:\Users\Me\Documents\Russell Data\;
+libname crsp 'D:\WRDS\2013'; /* location of crsp.msf table */
+
+* import files;
+%macro get_filenames(location);
+/* From: http://stackoverflow.com/questions/1409543/using-sas-macro-to-pipe-a-list-of-filenames-from-
+filename _dir_ "%bquote(&amp;location.)";
+data filenames(keep=memname);       
+handle=dopen( '_dir_' );       
+if handle &gt; 0 then do;         
+count=dnum(handle);         
+do i=1 to count;           
+memname=dread(handle,i);           
+output filenames;
+end;       
+end;
+rc=dclose(handle);
+run;
+filename _dir_ clear; 
+%mend;
+
+%get_filenames(&amp;path);
+
+%macro get_files(out=);
+    /* Adapted from: http://www.nesug.org/Proceedings/nesug11/cc/cc17.pdf */
+
+    /* Select index */
+    data files; set filenames; where find(memname,"&amp;out.")&gt;0; i = _n_; run;
+
+    /* Number of files */
+    proc sql noprint; select count(memname) into :nfiles from files; quit;     %put Number of files in directory: &amp;nfiles;
+
+    /* Import files */
+    %do i = 1 %to &amp;nfiles;
+        %* Get file name;
+        proc sql noprint; select %trim(%left(memname)) into :file from files where i = &amp;i; quit;
+        %put File: &amp;file;
+        %put File: "&amp;path.%trim(%left(&amp;file.))";         
+        filename fileloc "&amp;path.%trim(%left(&amp;file.))";         
+        LIBNAME XLSLIB "&amp;path.%trim(%left(&amp;file.))";
+
+        proc sql noprint;
+        /***Get total Number of Sheets***/
+            select count(distinct(MEMNAME)) into: tot
+         from sashelp.vtable
+         where LIBNAME ='XLSLIB' AND INDEX(MEMNAME,'General')=0;
+        /**Get the sheet names in to macro variables***/          
+         select distinct(MEMNAME) into: v1 - :v%trim (%left(&amp;tot))
+         from sashelp.vtable
+         where LIBNAME ='XLSLIB' AND INDEX (MEMNAME,'General')=0;
+
+        %* import data;
+        PROC IMPORT OUT= WORK.Russell_&amp;i
+                    DATAFILE= fileloc
+                    DBMS=EXCEL REPLACE;
+         RANGE="&amp;v1.";
+         GETNAMES=YES;
+         MIXED=NO;
+         SCANTEXT=YES;
+         USEDATE=YES;
+         SCANTIME=YES;
+        RUN;
+    %end;
+
+    %* combine files;     
+    data &amp;out;
+        format date $10. ticker $8. desc $20. iwght best12.;
+        set Russell_:;
+        date2 = input(date,mmddyy10.); format date2 date9.;
+        if not(missing(date2));
+        drop date;         
+        rename date2=date;     
+    run;
+
+    %* clean up;
+    proc datasets nolist; delete files Russell_:; quit; 
+
+%mend;
+
+%get_files(out=R1);     /* Read in R1000 data  */
+%get_files(out=R2);     /* Read in R2000 data  */
+%get_files(out=RMicro); /* Read in RMicro data */
+
+********* Add Permnos to Russell Membership data *********;
+%macro add_permnos(out=);
+    * add permnos based on ticker at specific date;
+    proc sql; /* create single entry per ticker (sum weights of duplicate tickers) */
+    create table &amp;out._id as
+    select distinct a.date, a.ticker, a.desc, sum(a.iwght) as iwght
+    from &amp;out. as a
+    where a.ticker is not missing     group by a.date, a.ticker     order by a.date, a.ticker
+    ;     
+    quit;     
+    proc sql;
+    create table &amp;out._id as
+    select intnx('month',a.date,0,'e') as date format date9., a.*,
+        b.permno, b.comnam, b.exchcd, b.shrcd, b.shrcls, abs(c.prc)*c.shrout as mcap
+    from &amp;out._id as a
+    left join (select * from crsp.stocknames where ticker is not missing) as b     
+    on a.ticker = b.ticker and a.date between b.namedt and b.nameenddt
+    left join crsp.msf as c
+    on b.permno = c.permno and intnx('month',a.date,0,'e') = intnx('month',c.date,0,'e')
+    order by a.date, a.ticker, mcap desc
+    ;     
+    quit;
+    data &amp;out._id; * remove duplicate permno matches;
+    set &amp;out._id;
+    where permno is not missing;     
+    by date ticker descending mcap;
+    if first.ticker;
+    keep date permno iwght comnam;
+    run; %mend;
+%add_permnos(out=R1);
+%add_permnos(out=R2);
+%add_permnos(out=RMicro);
+
+* crsp with russell identifiers;
+proc sql;
+    create table crsp_w_Russell
+    as select intnx('month',a.date,0,'e') as date format date9., a.permno,
+        case when b.R1000 = 1 then 1 else 0 end as R1000,
+        case when missing(b.iwght) then 0 else b.iwght end as R1wght,
+        case when c.R2000 = 1 then 1 else 0 end as R2000,
+        case when missing(c.iwght) then 0 else c.iwght end as R2wght,
+        case when d.RMicro = 1 then 1 else 0 end as RMicro,
+        case when missing(d.iwght) then 0 else d.iwght end as RMwght
+    from crsp.msf as a
+    left join (select *, 1 as R1000 from R1_id) as b
+    on a.permno=b.permno and intnx('month',a.date,0,'e') = b.date
+    left join (select *, 1 as R2000 from R2_id) as c
+    on a.permno=c.permno and intnx('month',a.date,0,'e') = c.date
+    left join (select *, 1 as RMicro from RMicro_id) as d
+    on a.permno=d.permno and intnx('month',a.date,0,'e') = d.date
+    where a.date &gt;= '01DEC1978'd     order by permno, date; quit;
+
+**** some checks *****;
+* summ stats;
+proc means data=R1_id nway noprint;
+class date; var iwght;
+output out=nmembers1 sum=iwght_R1;
+run;
+proc means data=R2_id nway noprint;
+class date; var iwght;
+output out=nmembers2 sum=iwght_R2;
+run;
+proc means data=RMicro_id nway noprint;
+class date; var iwght;
+output out=nmembers3 sum=iwght_RM;
+run; data nmembers;
+merge nmembers1(drop=_type_ rename=(_freq_=nR1)) nmembers2(drop=_type_  rename=(_freq_=nR2))
+     nmembers3(drop=_type_  rename=(_freq_=nRM));
+by date; run;
+
+*time series plot - number of funds; 
+ods pdf file="&amp;path.Russell N iwght.pdf" ; 
+goptions reset=all; options orientation=landscape;
+legend label=none value=(h=2 'Russell 1000' 'Russell 2000' 'Russell Micro') cborder=black;
+axis1 label=(angle=90 'Sum of index weights') order= 0 to 1.1 by .1; 
+axis2 label=(angle=90 'Number of stocks') order= 0 to 2200 by 200;
+   proc gplot data=nmembers;
+       symbol i=j v=none h=1 w=3;
+       format date year4.;
+    title "Total index weight of stocks in Russell index per month";
+      plot ( iwght_R1 iwght_R2 iwght_RM) * date
+        / overlay legend=legend1 vaxis=axis1
+      ;
+    run;
+    title "Number of stocks in Russell index per month";
+      plot ( nR1 nR2 nRM) * date
+        / overlay legend=legend1 vaxis=axis2
+      ;
+    run;
+    quit;
+    quit;
+ods pdf close;
+
+* clean up; 
+proc datasets nolist;
+delete filenames Membersmcap Nmembers: R1 R1_id R2 R2_id RMicro RMicro_id;
+quit;
+</code></pre></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/website/categories/code/'>Code</a>, <a href='/website/categories/sas/'>SAS</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/website/tags/sas/" class="post-tag no-text-decoration" >sas</a> <a href="/website/tags/import/" class="post-tag no-text-decoration" >import</a> <a href="/website/tags/excel/" class="post-tag no-text-decoration" >excel</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://velthuis.github.io/website/posts/Import-Excel-files/" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin"> <i class="fa-fw fab fa-linkedin"></i> </a> <a href="https://twitter.com/intent/tweet?text=Import Excel files - Raisa Velthuis&url=https://velthuis.github.io/website/posts/Import-Excel-files/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Import Excel files - Raisa Velthuis&u=https://velthuis.github.io/website/posts/Import-Excel-files/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"><div id="access-lastmod" class="post"> <span>Recent Update</span><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/website/posts/Introduction-to-Derivatives-Syllabus/">Introduction to Derivatives</a><li><a href="/website/posts/Import-Excel-files/">Import Excel files</a><li><a href="/website/posts/2SLS-with-double-clustered-standard-errors/">2SLS with double clustered standard errors</a><li><a href="/website/posts/Equity-Markets-and-Valuation-Syllabus/">Equity Markets and Valuation</a></ul></div><div id="access-tags"> <span>Trending Tags</span><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/website/tags/sas/">sas</a> <a class="post-tag" href="/website/tags/clustered-s-e/">clustered s.e.</a> <a class="post-tag" href="/website/tags/derivatives/">derivatives</a> <a class="post-tag" href="/website/tags/equity-markets/">equity markets</a> <a class="post-tag" href="/website/tags/excel/">excel</a> <a class="post-tag" href="/website/tags/import/">import</a></div></div></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/website/posts/2SLS-with-double-clustered-standard-errors/"><div class="card-body"> <span class="timeago small" >Jan 16, 2016<i class="unloaded">2016-01-16T00:00:00-05:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>2SLS with double clustered standard errors</h3><div class="text-muted small"><p> This program was written for my research on hedge fund capacity constraints, where we use recursive demeaning to estimate the returns to scale effect, following Pastor, Stambaugh, and Taylor (2015)...</p></div></div></a></div><div class="card"> <a href="/website/posts/Introduction-to-Derivatives-Syllabus/"><div class="card-body"> <span class="timeago small" >Jan 15<i class="unloaded">2021-01-15T00:00:00-05:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Introduction to Derivatives</h3><div class="text-muted small"><p> FIN2325–001 1 2 3 4 5 6 7 8 9 Prerequisites: FIN 2227 + FIN 2323 + FIN 2114 Class: MW 3–4:15pm, Bartley 2045 Office Hours: Wednesday 1:30-2:30pm, and by appointment Dr. Raisa Velthuis raisa.velth...</p></div></div></a></div><div class="card"> <a href="/website/posts/Equity-Markets-and-Valuation-Syllabus/"><div class="card-body"> <span class="timeago small" >Aug 23, 2020<i class="unloaded">2020-08-23T01:00:00-04:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Equity Markets and Valuation</h3><div class="text-muted small"><p> A syllabus will be added at a future date.</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <span class="btn btn-outline-primary disabled" prompt="Older"><p>-</p></span> <a href="/website/posts/2SLS-with-double-clustered-standard-errors/" class="btn btn-outline-primary" prompt="Newer"><p>2SLS with double clustered standard errors</p></a></div></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center"><div class="footer-left"><p class="mb-0"> © 2021 <a href="https://twitter.com/raisaing">Raisa Velthuis</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><h4 class="text-muted mb-4">Trending Tags</h4><a class="post-tag" href="/website/tags/sas/">sas</a> <a class="post-tag" href="/website/tags/clustered-s-e/">clustered s.e.</a> <a class="post-tag" href="/website/tags/derivatives/">derivatives</a> <a class="post-tag" href="/website/tags/equity-markets/">equity markets</a> <a class="post-tag" href="/website/tags/excel/">excel</a> <a class="post-tag" href="/website/tags/import/">import</a></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/website/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script defer src="/website/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script defer src="/website/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-8YLFEXNM95"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8YLFEXNM95'); }); </script>
